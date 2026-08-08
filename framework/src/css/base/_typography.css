@@ -1,0 +1,60 @@
+/* ============================================================
+   CraftCSS v2 — Typographie (Balises HTML natives uniquement)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--cc-font-sans);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--cc-text);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.75rem); font-weight: 800; letter-spacing: -0.03em; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 3rem); }
+h3 { font-size: clamp(1.25rem, 2.5vw, 2.25rem); }
+h4 { font-size: var(--cc-text-xl); font-weight: 600; }
+h5 { font-size: var(--cc-text-lg); font-weight: 600; }
+h6 { font-size: var(--cc-text-base); font-weight: 600; }
+
+p { line-height: 1.7; color: var(--cc-text-muted); }
+
+strong, b { font-weight: 600; color: var(--cc-text); }
+em { font-style: italic; }
+
+code {
+  font-family: var(--cc-font-mono);
+  font-size: 0.875em;
+  background: var(--cc-gray-100);
+  color: var(--cc-indigo-600);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+pre {
+  font-family: var(--cc-font-mono);
+  font-size: var(--cc-text-sm);
+  background: var(--cc-gray-50);
+  border: 1px solid var(--cc-gray-200);
+  border-radius: var(--cc-radius-lg);
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  line-height: 1.7;
+}
+
+blockquote {
+  border-left: 3px solid var(--cc-blue-500);
+  padding: 1rem 1.5rem;
+  background: var(--cc-blue-50);
+  border-radius: 0 var(--cc-radius) var(--cc-radius) 0;
+  color: var(--cc-text-muted);
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--cc-border);
+  margin: 2rem 0;
+}
